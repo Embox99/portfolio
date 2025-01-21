@@ -6,6 +6,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
 
 const navLinks = [
+  { title: "Home", path: "home" },
   { title: "About", path: "about" },
   { title: "Projects", path: "projects" },
   { title: "Contact", path: "contact" },
@@ -13,14 +14,15 @@ const navLinks = [
 
 const Navbar = () => {
   const [navBarOpen, setNavBarOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
   return (
     <nav className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] opacity-90">
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto  px-4 py-2">
         <Link
           href={"/"}
-          className="text-2xl md:text-5xl text-white font-semibold"
+          className="text-xl md:text-2xl text-white font-semibold"
         >
-          EV
+          E.Vilensky
         </Link>
         <div className="mobile-menu block md:hidden">
           {!navBarOpen ? (
@@ -41,15 +43,16 @@ const Navbar = () => {
         </div>
         <div className="menu hidden md:block md:w-auto" id="navbar">
           <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
-            {navLinks.map((link, index) => (
-              <li key={index}>
-                <NavLink href={link.path} title={link.title} />
+            {navLinks.map((link) => (
+              <li key={link.path}>
+                <NavLink href={link.path} title={link.title} isActive={activeSection === link.path}
+                  onSetActive={setActiveSection} />
               </li>
             ))}
           </ul>
         </div>
       </div>
-      {navBarOpen ? <MenuOverlay links={navLinks} /> : null}
+      {navBarOpen ? <MenuOverlay links={navLinks} onSetActive={setActiveSection} activeSection={activeSection} /> : null}
     </nav>
   );
 };
