@@ -33,7 +33,7 @@ const AboutSection = () => {
       id: "certification",
       content: (
         <ul className="list-disc pl-2">
-          <li>Google Professional Cloud Developer</li>
+          <li>Google Professional Cloud Developer - In progress</li>
         </ul>
       ),
     },

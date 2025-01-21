@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import Link from "next/link";
@@ -7,8 +7,22 @@ import { Link as ScrollLink } from "react-scroll";
 import { motion } from "framer-motion";
 
 export default function HeroSection() {
+  const [showNotification, setShowNotification] = useState(false);
+
+  const handleImageClick = () => {
+    setShowNotification(true);
+    setTimeout(() => {
+      setShowNotification(false);
+    }, 1500);
+  };
+
   return (
     <section className="lg:py-16" id="home">
+      {showNotification && (
+        <div className="fixed top-0 left-0 right-0 bg-primary-500 text-white text-center py-2 z-50">
+          Yes, I know, it's a nice photo.
+        </div>
+      )}
       <div className="grid grid-cols-1 sm:grid-cols-12 text-center sm:text-left">
         <motion.div
           initial={{ opacity: 0, scale: 0.5, y: "50%" }}
@@ -56,7 +70,7 @@ export default function HeroSection() {
         <motion.div
           initial={{ opacity: 0, scale: 0.5, y: "50%" }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
-          className="col-span-5 place-self-center mt-4 lg:mt-0 md:ml-7  "
+          className="col-span-5 place-self-center mt-4 lg:mt-0 md:ml-7"
         >
           <div
             transition={{ type: "spring", duration: 0.5 }}
@@ -65,9 +79,10 @@ export default function HeroSection() {
             <Image
               src="/images/hero-section-image.jpg"
               alt="hero image"
-              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-full w-[250px] h-[250px] lg:w-[400px] lg:h-[400px]"
+              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-full w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] hover:scale-110 transition-transform duration-300 cursor-pointer"
               width={300}
               height={300}
+              onClick={handleImageClick}
             />
           </div>
         </motion.div>
