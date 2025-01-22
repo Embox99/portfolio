@@ -8,10 +8,20 @@ const projectData = [
   {
     id: 1,
     title: "Clothing suggestions Website",
-    description: "project 1 description",
+    description:
+      "Tool designed to help users decide what to wear based on the current weather conditions",
     image: "images/projects/weather-project.jpg",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/Embox99/se_project_react",
+    previewUrl: "",
+  },
+  {
+    id: 1,
+    title: "Book Platform",
+    description: "Discover, track, and organize your reading journey",
+    image: "images/projects/book-project.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/Embox99/book-finder-frontend",
     previewUrl: "",
   },
 ];
@@ -55,7 +65,7 @@ const ProjectSection = () => {
           isSelected={tag === "Mobile"}
         />
       </div>
-      <ul>
+      <ul className="grid md:grid-cols-3 gap-8 md:gap-12">
         {filteredProjects.map((project, index) => (
           <motion.li
             key={index}

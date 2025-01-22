@@ -19,8 +19,8 @@ export default function HeroSection() {
   return (
     <section className="lg:py-16" id="home">
       {showNotification && (
-        <div className="fixed top-0 left-0 right-0 bg-primary-500 text-white text-center py-2 z-50">
-          Yes, I know, it's a nice photo.
+        <div className="fixed top-0 left-1/2 transform -translate-x-1/2 bg-primary-500 text-white text-center py-2 px-4 rounded w-1/4 z-50">
+          Yes, I know, it's a nice photo.😊
         </div>
       )}
       <div className="grid grid-cols-1 sm:grid-cols-12 text-center sm:text-left">
