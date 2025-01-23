@@ -56,6 +56,7 @@ const AboutSection = () => {
           alt="About image"
           width={500}
           height={500}
+          priority
           className="rounded"
         />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">

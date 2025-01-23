@@ -83,6 +83,7 @@ export default function HeroSection() {
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-full w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] hover:scale-110 transition-transform duration-300 cursor-pointer"
               width={300}
               height={300}
+              priority
               onClick={handleImageClick}
             />
           </div>

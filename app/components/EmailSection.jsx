@@ -1,7 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import GithubIcon from "../../public/github-icon.svg";
-import LinkedinIcon from "../../public/linkedin-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -35,7 +33,7 @@ const EmailSection = () => {
       setFormData({ email: "", subject: "", message: "" });
     }
   };
-  
+
   return (
     <section
       className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
@@ -52,10 +50,22 @@ const EmailSection = () => {
         </p>
         <div className="social flex flex-row gap-2">
           <Link href="https://github.com/Embox99">
-            <Image src={GithubIcon} alt="Github Icon" />
+            <Image
+              src="/icons/github-icon.svg"
+              alt="Github Icon"
+              loading="lazy"
+              width={50}
+              height={50}
+            />
           </Link>
           <Link href="https://www.linkedin.com/in/eduard-vilensky/">
-            <Image src={LinkedinIcon} alt="LinkedIn Icon" />
+            <Image
+              src="/icons/linkedin-icon.svg"
+              alt="LinkedIn Icon"
+              loading="lazy"
+              width={50}
+              height={50}
+            />
           </Link>
         </div>
       </div>
