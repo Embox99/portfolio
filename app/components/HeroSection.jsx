@@ -80,7 +80,7 @@ export default function HeroSection() {
             <Image
               src="/images/hero-section-image.jpg"
               alt="hero image"
-              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-full w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] hover:scale-110 transition-transform duration-300 cursor-pointer"
+              className="absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-full w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer hover:border-2 hover:border-green-500"
               width={300}
               height={300}
               priority
