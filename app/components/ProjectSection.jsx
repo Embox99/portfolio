@@ -6,7 +6,17 @@ import { motion, useInView } from "framer-motion";
 
 const projectData = [
   {
-    id: 1,
+    id: 2,
+    title: "Flower Shop Website",
+    description:
+      "A modern flower shop built with TypeScript, Tailwind CSS, and Next.js, offering a seamless shopping experience.",
+    image: "images/projects/flower-shop-slung.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/Embox99/flower_shop",
+    previewUrl: "",
+  },
+  {
+    id: 2,
     title: "Clothing suggestions Website",
     description:
       "Tool designed to help users decide what to wear based on the current weather conditions",
@@ -16,7 +26,7 @@ const projectData = [
     previewUrl: "",
   },
   {
-    id: 1,
+    id: 3,
     title: "Book Platform",
     description: "Discover, track, and organize your reading journey",
     image: "images/projects/book-project.png",
