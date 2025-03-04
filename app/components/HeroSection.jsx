@@ -19,7 +19,7 @@ export default function HeroSection() {
   return (
     <section className="lg:py-16" id="home">
       {showNotification && (
-        <div className="fixed top-0 left-1/2 transform -translate-x-1/2 bg-primary-500 text-white text-center py-2 px-4 rounded w-full sm:w-1/4 z-50">
+        <div className="fixed top-20 left-1/2 transform -translate-x-1/2 bg-primary-500 text-white text-center py-2 px-4 rounded w-full sm:w-1/4 z-50">
           Yes, I know, it's a nice photo.😊
         </div>
       )}
@@ -61,7 +61,7 @@ export default function HeroSection() {
             </button>
             <button className="px-0.5 py-0.5 w-full sm:w-fit rounded-full bg-transparent bg-gradient-to-br from-primary-500  to-secondary-500 hover:bg-slate-800 text-white mt-3">
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                <Link href="https://drive.google.com/file/d/1QgIFq9KC4-AzN5MxhfexYCHgPEtB0P8B/view?usp=sharing">
+                <Link href="https://drive.google.com/file/d/1u3qMu2ItWMJPjAWEhLM_y4lOykI49b8W/view?usp=sharing">
                   Download CV
                 </Link>
               </span>
