@@ -6,6 +6,16 @@ import { motion, useInView } from "framer-motion";
 
 const projectData = [
   {
+    id: 1,
+    title: "Expense Tracker",
+    description:
+      "Expense-tracking app using the MERN stack. The app includes user authentication with JWT, income and expense tracking, interactive charts, and the ability to export data in Excel format.",
+    image: "images/projects/smart_spend_login.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/Embox99/smart_spend",
+    previewUrl: "",
+  },
+  {
     id: 2,
     title: "Flower Shop Website",
     description:
@@ -16,22 +26,22 @@ const projectData = [
     previewUrl: "",
   },
   {
-    id: 2,
-    title: "Clothing suggestions Website",
-    description:
-      "Tool designed to help users decide what to wear based on the current weather conditions",
-    image: "images/projects/weather-project.jpg",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/Embox99/se_project_react",
-    previewUrl: "",
-  },
-  {
     id: 3,
     title: "Book Platform",
     description: "Discover, track, and organize your reading journey",
     image: "images/projects/book-project.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/Embox99/book-finder-frontend",
+    previewUrl: "",
+  },
+  {
+    id: 4,
+    title: "Clothing suggestions Website",
+    description:
+      "Tool designed to help users decide what to wear based on the current weather conditions",
+    image: "images/projects/weather-project.jpg",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/Embox99/se_project_react",
     previewUrl: "",
   },
 ];
