@@ -24,7 +24,6 @@ const AboutSection = () => {
       content: (
         <ul className="list-disc pl-2">
           <li>TripleTen - Full Stack Development Bootcamp</li>
-          <li>The Open University of Israel</li>
         </ul>
       ),
     },
@@ -33,7 +32,7 @@ const AboutSection = () => {
       id: "certification",
       content: (
         <ul className="list-disc pl-2">
-          <li>Google Professional Cloud Developer - In progress</li>
+          <li>AWS Certified Developer Associate - In progress</li>
         </ul>
       ),
     },

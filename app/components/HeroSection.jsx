@@ -49,23 +49,21 @@ export default function HeroSection() {
             projects is what drives me every day!
           </p>
           <div>
-            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500  to-secondary-500 text-white mt-3">
-              <ScrollLink
-                to={"contact"}
-                spy={true}
-                smooth={true}
-                duration={500}
-              >
+            <ScrollLink to={"contact"} spy={true} smooth={true} duration={500}>
+              <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500  to-secondary-500 text-white mt-3">
                 Hire me
-              </ScrollLink>
-            </button>
-            <button className="px-0.5 py-0.5 w-full sm:w-fit rounded-full bg-transparent bg-gradient-to-br from-primary-500  to-secondary-500 hover:bg-slate-800 text-white mt-3">
-              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                <Link href="https://drive.google.com/file/d/1u3qMu2ItWMJPjAWEhLM_y4lOykI49b8W/view?usp=sharing">
+              </button>
+            </ScrollLink>
+            <Link
+              href="https://docs.google.com/document/d/1Kdo1VUsGaB6pa5UO_t8bFJ1sZZdA7ft9-A-2X8m85YQ/export?format=pdf"
+              target="_blank"
+            >
+              <button className="px-0.5 py-0.5 w-full sm:w-fit rounded-full bg-transparent bg-gradient-to-br from-primary-500  to-secondary-500 hover:bg-slate-800 text-white mt-3">
+                <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                   Download CV
-                </Link>
-              </span>
-            </button>
+                </span>
+              </button>
+            </Link>
           </div>
         </motion.div>
         <motion.div

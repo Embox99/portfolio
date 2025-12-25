@@ -27,21 +27,21 @@ const projectData = [
   },
   {
     id: 3,
+    title: "Chat and Video Calling App",
+    description:
+      "A real-time language exchange platform featuring video calls, screen sharing, and interactive chat. Built with the MERN stack, leveraging Stream SDK, Zustand, and TanStack Query for optimal performance.",
+    image: "images/projects/lingo-screenshot.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/Embox99/lingo-video-calls",
+    previewUrl: "",
+  },
+  {
+    id: 4,
     title: "Book Platform",
     description: "Discover, track, and organize your reading journey",
     image: "images/projects/book-project.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/Embox99/book-finder-frontend",
-    previewUrl: "",
-  },
-  {
-    id: 4,
-    title: "Clothing suggestions Website",
-    description:
-      "Tool designed to help users decide what to wear based on the current weather conditions",
-    image: "images/projects/weather-project.jpg",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/Embox99/se_project_react",
     previewUrl: "",
   },
 ];
@@ -66,7 +66,7 @@ const ProjectSection = () => {
   return (
     <section id="projects" ref={ref}>
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
-        My Project
+        My Projects
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
         <ProjectTag
