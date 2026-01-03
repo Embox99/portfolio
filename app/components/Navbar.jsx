@@ -22,7 +22,7 @@ const Navbar = () => {
           href={"/"}
           className="text-xl md:text-2xl text-white font-semibold"
         >
-          E.Vilenski
+          E.Vilensky
         </Link>
         <div className="mobile-menu block md:hidden">
           {!navBarOpen ? (

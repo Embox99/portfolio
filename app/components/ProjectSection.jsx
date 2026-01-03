@@ -27,6 +27,16 @@ const projectData = [
   },
   {
     id: 3,
+    title: "Barbershop Website",
+    description:
+      "A modern full-stack barbershop booking system featuring smart real-time scheduling, SMS authentication, and a comprehensive admin dashboard built with React, Node.js, and PostgreSQL.",
+    image: "images/projects/screenshot-hp.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/Embox99/barbershop-booking-system",
+    previewUrl: "",
+  },
+  {
+    id: 4,
     title: "Chat and Video Calling App",
     description:
       "A real-time language exchange platform featuring video calls, screen sharing, and interactive chat. Built with the MERN stack, leveraging Stream SDK, Zustand, and TanStack Query for optimal performance.",
@@ -36,7 +46,7 @@ const projectData = [
     previewUrl: "",
   },
   {
-    id: 4,
+    id: 5,
     title: "Book Platform",
     description: "Discover, track, and organize your reading journey",
     image: "images/projects/book-project.png",
