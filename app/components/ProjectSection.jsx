@@ -50,7 +50,7 @@ const projectData = [
     title: "Dual N Back Game",
     description:
       "A customizable Dual N-Back brain trainer built with Next.js and TypeScript, featuring adjustable N-levels, Web Speech API audio, and detailed accuracy statistics.",
-    image: "images/projects/dual-n-back-main.png",
+    image: "images/projects/dual_n_back-main.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/Embox99/dual_n_back",
     previewUrl: "",
